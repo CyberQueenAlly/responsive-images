@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Images</title>
+</head>
+<style>
+    body {
+        background-color: red;
+    }
+    img {
+        width: 50%;
+        height: auto;
+    }
+    @media (min-width: 640px) {
+        body {
+            background-color: blue;
+            /* Only background color changes! */
+        }
+    }
+    @media (max-width: 640px) {
+
+        img {
+            width: 100%;
+            /* Only with changes to full! */
+        }
+
+    }
+    
+</style>
+<body>
+    <img src="images/birmingham.jpg" alt="painting">
+</body>
+</html>
